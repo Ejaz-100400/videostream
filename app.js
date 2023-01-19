@@ -12,9 +12,13 @@ app.use((req,res,next)=>{
     res.setHeader('Access-Control-Allow-Headers','Content-Type,Authorization');
     next();
 })
+// app.get("/shows", function (req, res) {
+//     res.sendFile(__dirname + "/index.html");
+// }); 
 app.use(bodyparser.json())
 app.use(bodyparser.urlencoded({ extended: true }))
 app.use('/',routes);
+
 
 mongoose.connect('mongodb://127.0.0.1:27017/edurekavideostream',{useNewUrlParser:true,useUnifiedTopology:true})
 .then(client =>{

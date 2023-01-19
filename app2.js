@@ -1,13 +1,32 @@
-fetch('http://localhost:7000/shows')
-.then(response => response.json())
-.then(data =>this.displaydata(data));
 
-function displaydata(data) {
-    // data.movieshows.forEach((video)=>{
-    //     console.log(video.videourl[0])
-    // })
-    // document.querySelectorAll('video')[0].src =data.movieshows[0].videourl;
-    console.log(data.movieshows[0].videourl);
-}
+// function fetchnddisplayvideo(_id){
+// fetch(`http://localhost:7000/shows/${_id}/`)
+// .then(response => response.json())
+// .then(data =>console.log(data.movie));
+// }
+// fetchnddisplayvideo(1);
 
 
+
+
+
+
+
+
+
+
+
+
+    // button= document.querySelectorAll('.video-btn');
+//     let iddata=['']
+//     data.forEach((id)=>{
+//         iddata.push(id._id);
+//     })
+//     button.forEach((but)=>{
+        
+//     })
+// but.addEventListener('click',function(e){
+//     if(iddata.includes(e.target.id)){
+//         document.querySelectorAll('video')[e.target.id+1].src =data[e.target.id].videourl
+//     }
+// })
