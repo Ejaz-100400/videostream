@@ -12,7 +12,7 @@ app.use((req,res,next)=>{
     res.setHeader('Access-Control-Allow-Headers','Content-Type,Authorization');
     next();
 })
-// app.get("/shows", function (req, res) {
+// app.get("/shows/:_id/video", function (req, res) {
 //     res.sendFile(__dirname + "/index.html");
 // }); 
 app.use(bodyparser.json())
